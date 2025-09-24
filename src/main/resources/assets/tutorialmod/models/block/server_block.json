@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "tutorialmod:block/server_block_top_bottom",
+    "down": "tutorialmod:block/server_block_top_bottom",
+    "north": "tutorialmod:block/server_block_front",
+    "east": "tutorialmod:block/server_block_top_bottom",
+    "south": "tutorialmod:block/server_block_top_bottom",
+    "west": "tutorialmod:block/server_block_top_bottom",
+    "particles": "tutorialmod:block/server_block_top_bottom"
+  }
+}

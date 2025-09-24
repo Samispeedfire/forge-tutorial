@@ -1,0 +1,9 @@
+{
+  "item.tutorialmod.server": "Server",
+  "item.tutorialmod.amd_epyc": "AMD EPYC",
+  "item.tutorialmod.mainboard": "Mainboard",
+
+  "block.tutorialmod.server_block": "Server Block",
+
+  "creativetab.tutorial_tab": "Server Tab"
+}

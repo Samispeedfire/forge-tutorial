@@ -1,6 +1,10 @@
 package at.samispeedfire.tutorialmod;
 
+import at.samispeedfire.tutorialmod.block.ModBlocks;
+import at.samispeedfire.tutorialmod.item.ModCreativeModeTabs;
+import at.samispeedfire.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -26,6 +30,10 @@ public class TutorialMod
     public TutorialMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
